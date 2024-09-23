@@ -19,7 +19,7 @@ exports.getSoilByIdService = async (soilId) => {
 }
 
 // update soil by Id
-exports.updateSoilService = async (soilId, data) => {
+exports.updateSoilByIdService = async (soilId, data) => {
     const result = await Pedosphere.updateOne({ _id: soilId }, data);
     return result;
 };
