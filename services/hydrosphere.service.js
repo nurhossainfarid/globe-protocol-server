@@ -19,7 +19,7 @@ exports.getPondByIdService = async (pondId) => {
 }
 
 // update soil by Id
-exports.updatePondService = async (pondId, data) => {
+exports.updatePondByIdService = async (pondId, data) => {
     const result = await Hydrosphere.updateOne({ _id: pondId }, data);
     return result;
 };

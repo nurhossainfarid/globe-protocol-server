@@ -19,7 +19,7 @@ exports.getAirByIdService = async (airId) => {
 }
 
 // update air by Id
-exports.updateAirService = async (airId, data) => {
+exports.updateAirByIdService = async (airId, data) => {
     const result = await Atmosphere.updateOne({ _id: airId }, data);
     return result;
 };

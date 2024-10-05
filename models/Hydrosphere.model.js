@@ -8,6 +8,10 @@ const hydrosphereSchema = mongoose.Schema({
         trim: true,
         required: [true, "Please Provide pond type."],
     },
+    description: {
+        type: String,
+        trim: true,
+    },
     temperature: {
         type: String,
         trim: true,
@@ -23,12 +27,12 @@ const hydrosphereSchema = mongoose.Schema({
         trim: true,
         required: [true, "Please Provide dissolved oxygen quantity."],
     },
-    plant: {
+    plants: {
         type: Array,
         trim: true,
         required: [true, "Please Provide plant type."]
     },
-    fish: {
+    fishes: {
         type: Array,
         trim: true,
         required: [true, "Please Provide fish type."]  

@@ -9,6 +9,10 @@ const pedosphereSchema = mongoose.Schema({
         trim: true,
         required: [true, "Please Provide soil type."],
     },
+    description: {
+        type: String,
+        trim: true,
+    },
     temperature: {
         type: String,
         trim: true,
@@ -34,3 +38,4 @@ const pedosphereSchema = mongoose.Schema({
 // exports
 const Pedosphere = mongoose.model('Pedosphere', pedosphereSchema);
 module.exports = Pedosphere;
+
